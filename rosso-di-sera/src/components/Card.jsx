@@ -21,7 +21,7 @@ export default function Card({ data }) {
                         </div>
 
                     </div>
-                    // ))
+                    // )) 
                 ) : (
                     "Loading..."
                 )}
