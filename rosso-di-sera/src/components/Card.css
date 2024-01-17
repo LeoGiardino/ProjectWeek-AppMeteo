@@ -1,0 +1,71 @@
+.main {
+    margin-top: 50px;
+  }
+  .weather-panel {
+    background-image: url("https://unsplash.it/600/400?image=roma");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 25px 25px 40px 0px rgba(0,0,0,0.33);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    
+    small {
+      color: inherit;
+      font-size: 50%;
+    }
+    ul.forecast > li {
+      border-top: 1px solid #fff;
+    }
+    .temperature {
+      & > span {
+          font-size: 2em;
+      }
+    }
+  }
+
+  .wind{
+    width: 250px;
+  }
+
+  .wind1{
+    width: 65%;
+  }
+
+  .wind2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wind p:nth-child(2){
+    border-bottom: 1px solid black;
+  }
+
+
+
+
+.bordo{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bordo p {
+    margin: 0;
+    
+}
+
+.secondo{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rettangolo{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 250px;
+}
