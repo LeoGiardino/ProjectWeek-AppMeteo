@@ -20,18 +20,25 @@ export default function Forecast() {
     }, []);
 
     return (
-        <div className='carrello mt-3 container'>
+        <div className='carrello mt-3 container px-0'>
 
             <div className="carousel-container">
                 {datas.list && datas.list.map((item) => (
-                    <Col key={item.dt} className="carousel-slide d-flex flex-column">
-                        <div>{convertTimestampToTime(item.dt)}</div>
-                        <div><img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" /></div>
-                        <div>{parseInt(item.main.temp - 273.15) + "°"}</div>
-                    </Col>
+
+                    <div>
+                        <Col key={item.dt} className="carousel-slide d-flex flex-column">
+                            <div>{convertTimestampToTime(item.dt)}</div>
+                            <div><img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" /></div>
+                            <div>{parseInt(item.main.temp - 273.15) + "°"}</div>
+                        </Col>
+                    </div>
+
+
                 ))}
-            </div>
+                
+
         </div>
+        </div >
     );
 }
 

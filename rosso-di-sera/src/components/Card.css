@@ -24,6 +24,27 @@
     }
   }
 
+
+  .carousel-container2 {
+    width: 100%;
+    padding-block: 16px 32px;
+ 
+    overflow-x: auto;
+
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+
+  }
+
+  .carousel-slide2{
+  
+    flex: 1 0 30%;
+    scroll-snap-align: center;
+
+    }
+
   .wind{
     width: 250px;
   }
@@ -36,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 35%;
   }
 
   .wind p:nth-child(2){
@@ -48,7 +70,8 @@
 .bordo{
     border: 1px solid black;
     border-radius: 10px;
-    width: 185px;
+    width: 200px!important;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,5 +90,5 @@
 .rettangolo{
   border: 1px solid black;
   border-radius: 10px;
-  width: 250px;
+  width: 270px;
 }
