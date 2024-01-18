@@ -30,7 +30,7 @@ export default function NavBar({query}) {
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
-                            placeholder="Search"
+                            placeholder="🔍  Search"
                             className="me-2"
                             aria-label="Search"
                             onChange={(e) => onChange(e)}
