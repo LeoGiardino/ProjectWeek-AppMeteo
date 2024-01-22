@@ -1,19 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Card.css'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+
 
 export default function Card({ data }) {
 
-    const [mapPosition, setMapPosition] = useState([0, 0]);
-
-    useEffect(() => {
-        // Imposta la posizione della mappa sulla latitudine e longitudine della città
-        if (data && data.coord) {
-          setMapPosition([data.coord.lat, data.coord.lon]);
-        }
-      }, [data]);
-
-    console.log(mapPosition);
+    
 
     return (
 
@@ -37,7 +28,7 @@ export default function Card({ data }) {
 
 
 
-                    <div className='container px-0'>
+                    <div className='container px-0 mb-4'>
                         <div className='carousel-container2'>
 
                             <div className='d-flex justify-content-between mt-5 container px-0 '>
@@ -133,13 +124,7 @@ export default function Card({ data }) {
 
                         </div>
                     </div>
-                    {/* Aggiungi la mappa qui */}
-                    <MapContainer center={mapPosition} zoom={13} style={{ height: '300px' }}>
-                        <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' attribution='&copy; OpenStreetMap contributors' />
-                        <Marker position={mapPosition}>
-                            <Popup>{data.name}</Popup>
-                        </Marker>
-                    </MapContainer>
+                   
                 </>
             ) : (
                 <>
