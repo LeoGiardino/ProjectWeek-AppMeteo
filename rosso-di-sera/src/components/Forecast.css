@@ -52,10 +52,17 @@ main {
     }
   }
 
+  
 
   .carrello{
     border: 1px solid black;
     border-radius: 10px;
     width: 49%!important;
     height: 260px;
+  }
+
+  @media (max-width: 768px) {
+    .carrello{
+      display: block;
+    }
   }

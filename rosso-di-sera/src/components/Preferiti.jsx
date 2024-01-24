@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Preferiti.css'
+import { Link } from 'react-router-dom';
 
 export default function Preferiti({ny, to, be}) {
 
@@ -38,7 +39,7 @@ export default function Preferiti({ny, to, be}) {
                     </div>
                 </div>
             </div>
-            <div className='prefCard be'>
+            <div  className='prefCard be' style={{ textDecoration: "none" }}>
             <div className='d-flex cont'>
                     <div className='d-flex flex-column' style={{ width: "50%" }}>
                         <div className='p-3' style={{ fontSize: "1.3rem", fontWeight: "bold" }}>{be.name}</div>

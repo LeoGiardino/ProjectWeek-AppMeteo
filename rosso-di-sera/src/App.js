@@ -1,29 +1,23 @@
-
+// App.js
 import './App.css';
 import Main from './components/Main';
 import NavBar from './components/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './components/Footer';
-
-
+import Home from './pages/Home';
 
 
 function App() {
 
-  const [query, setQuery] = useState('');
 
   return (
-    <BrowserRouter >
-      <NavBar query = {setQuery}/>
-      <Main query={query}/>
-      <Footer />
-        <Routes >
-          <Route/>
-
-        </Routes>
+    <BrowserRouter>
+      
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </BrowserRouter>
-    
   );
 }
 
